@@ -45,7 +45,7 @@ function App() {
       if (limit) {
         params.limit = limit
       }
-      const response = await axios.get('http://20.75.207.207/auction-data', {
+      const response = await axios.get('http://localhost:8000/auction-data', {
         params
       });
       setAuctionData(response.data);
